@@ -434,7 +434,7 @@ def maps():
                    }
 
     headers = {
-        "X-RapidAPI-Key": "e182587402msh8fb9cb7826edf43p1eda64jsnb099563a5477",
+        "X-RapidAPI-Key": "",
         "X-RapidAPI-Host": "google-maps28.p.rapidapi.com"
     }
 
@@ -461,7 +461,7 @@ def videos():
         search_url = 'https://www.googleapis.com/youtube/v3/search'
         videos_url = 'https://www.googleapis.com/youtube/v3/videos'
         params = {
-            'key': 'AIzaSyChdx2e082EBpKVzC_NudAI9z6tpakgjSA',
+            'key': '',
             'q': 'workout for'+data+'people',
             'part': 'snippet',
             'maxResults': 6,
@@ -476,7 +476,7 @@ def videos():
             video_ids.append(result['id']['videoId'])
 
         video_params = {
-            'key': 'AIzaSyChdx2e082EBpKVzC_NudAI9z6tpakgjSA',
+            'key': '',
             'id': ','.join(video_ids),
             'part':'snippet,contentDetails',
             'maxResults': 6
